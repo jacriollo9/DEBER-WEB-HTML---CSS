@@ -1,0 +1,186 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente global */
+    background-color: #f0f8ff; /* Fondo azul claro */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
+    display: flex; /* Uso de flexbox para centrar los elementos */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Altura mínima de la ventana */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+}
+
+/* Contenedor principal que agrupa la imagen y el login/registro */
+.main-container {
+    display: flex; /* Uso de flexbox para disponer los elementos en fila */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    align-items: center; /* Alinear los elementos verticalmente en el centro */
+    padding: 20px; /* Agregar algo de padding para móviles */
+    box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total */
+}
+
+/* Contenedor de la imagen */
+.image-box {
+    flex: 2; /* La imagen ocupa el doble de espacio que el formulario */
+    display: flex; /* Flexbox para centrar la imagen */
+    align-items: center; /* Centrar la imagen verticalmente */
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px 0 0 10px; /* Bordes redondeados en las esquinas izquierdas */
+    overflow: hidden; /* Evitar que la imagen se salga del contenedor */
+}
+
+.image-box img {
+    max-width: 100%; /* Asegurar que la imagen no sobrepase el contenedor */
+    height: auto; /* Mantener las proporciones de la imagen */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor sin distorsión */
+}
+
+/* Estilo del contenedor de login */
+.login-container, .register-container {
+    flex: 1; /* El formulario ocupa menos espacio que la imagen */
+    padding: 40px; /* Espaciado interno del formulario */
+    display: flex; /* Flexbox para organizar los elementos del formulario */
+    flex-direction: column; /* Disponer los elementos en una columna */
+    justify-content: center; /* Centrar el formulario verticalmente */
+    text-align: center; /* Centrar el texto */
+    background-color: white; /* Fondo blanco del formulario */
+    border-radius: 0 10px 10px 0; /* Bordes redondeados en las esquinas derechas */
+    box-sizing: border-box; /* Asegurar que el padding no afecte el ancho total */
+    height: 100%; /* Asegurar que el contenedor ocupe toda la altura disponible */
+}
+
+/* Imagen de la gota en el formulario de registro */
+.drop-icon-container {
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+}
+
+.drop-icon {
+    width: 180px; /* Mantener el tamaño de la imagen de la gota */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 28px; /* Tamaño de la fuente para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #0288d1; /* Color azul */
+}
+
+/* Estilo para los contenedores de los inputs */
+.input-container {
+    display: flex; /* Flexbox para alinear el ícono y el input */
+    align-items: center; /* Alinear el ícono y el campo de texto verticalmente */
+    margin-bottom: 15px; /* Espaciado entre los inputs */
+    background-color: #f1f1f1; /* Fondo gris claro para el contenedor del input */
+    border-radius: 5px; /* Bordes redondeados del contenedor */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total */
+}
+
+.input-container input {
+    border: none; /* Sin bordes */
+    background-color: transparent; /* Fondo transparente */
+    flex: 1; /* El input ocupa todo el espacio restante dentro del contenedor */
+    padding-left: 10px; /* Espaciado a la izquierda dentro del input */
+    font-size: 14px; /* Tamaño de la fuente del input */
+}
+
+/* Estilo para los íconos dentro de los inputs */
+.icon {
+    font-size: 18px; /* Tamaño de los íconos */
+}
+
+/* Estilo del ícono del ojo (mostrar/ocultar contraseña) */
+.icon.eye {
+    cursor: pointer; /* El cursor cambia a mano cuando se pasa sobre el ícono */
+}
+
+/* Estilo de los botones de acción (login y registro) */
+.login-btn, .register-btn {
+    background-color: #4a4a4a; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px; /* Espaciado interno del botón */
+    width: 100%; /* Los botones ocupan todo el ancho del contenedor */
+    margin-bottom: 10px; /* Espaciado entre los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente del texto del botón */
+    box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño del botón */
+}
+
+/* Cambio de color cuando el cursor está sobre el botón */
+.login-btn:hover, .register-btn:hover {
+    background-color: #333; /* Color más oscuro al hacer hover */
+}
+
+/* Estilo del enlace de "Olvidaste tu contraseña" */
+.forgot-password {
+    text-align: right; /* Alinear el enlace a la derecha */
+    margin-bottom: 20px; /* Espacio debajo del enlace */
+}
+
+.forgot-password a {
+    font-size: 12px; /* Tamaño de la fuente del enlace */
+    color: #7e7e7e; /* Color gris */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Cambiar la disposición a una columna */
+        max-width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+        height: auto; /* Ajustar la altura automáticamente */
+        padding: 10px; /* Agregar padding interno */
+        box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total */
+    }
+
+    .image-box {
+        /* Mantener la imagen visible pero más pequeña en móviles */
+        flex: 1; /* Ajustar el tamaño del contenedor de imagen en móviles */
+        padding: 10px; /* Reducir el padding alrededor de la imagen */
+        border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+    }
+
+    .image-box img {
+        max-width: 80%; /* La imagen ocupa un 80% del ancho del contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .login-container, .register-container {
+        border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+        padding: 20px; /* Reducir el padding en móviles */
+        width: 100%; /* Asegurar que el contenedor ocupe todo el ancho */
+    }
+
+    h1 {
+        font-size: 22px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    .input-container {
+        padding: 8px; /* Reducir el padding de los inputs en móviles */
+    }
+
+    .login-btn, .register-btn {
+        font-size: 14px; /* Reducir el tamaño del texto en los botones */
+    }
+
+    /* Asegura que el último botón sea visible */
+    .register-btn {
+        margin-bottom: 20px; /* Agregar un margen adicional al final */
+    }
+
+    /* Asegurar que todo el formulario se ajuste en la pantalla */
+    .login-container {
+        margin-bottom: 20px; /* Agregar espacio debajo para garantizar que todo sea visible */
+    }
+}

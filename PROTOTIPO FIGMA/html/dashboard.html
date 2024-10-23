@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metaetiqueta para la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Metaetiqueta para hacer que el sitio sea responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>HydroTech - Dashboard</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- Contenedor principal que agrupa todos los elementos -->
+    <div class="main-container">
+
+        <!-- Cabecera con el logo y el botón de "Ver más" -->
+        <header>
+            <!-- Logo de HydroTech -->
+            <div class="logo">
+                <img src="../imag/imagHydroTech.jpg" alt="HydroTech Logo">
+            </div>
+            <!-- Botón de Ver Más -->
+            <div class="ver-mas">
+                <button class="more-btn">Ver más ▼</button>
+            </div>
+        </header>
+
+        <!-- Sección de notificaciones -->
+        <section class="notifications">
+            <!-- Notificación 1 -->
+            <div class="notification">
+                <i class="bell-icon">🔔</i>
+                <span>Se realizó exitosamente el riego en la parcela A</span>
+                <i class="arrow-icon">➔</i>
+            </div>
+            <!-- Notificación 2 -->
+            <div class="notification">
+                <i class="bell-icon">🔔</i>
+                <span>Se detectó una fuga de agua en la parcela B</span>
+                <i class="arrow-icon">➔</i>
+            </div>
+        </section>
+
+        <!-- Sección de datos generales -->
+        <section class="general-data">
+            <h2>Datos generales</h2>
+            <!-- Cuadrícula de datos -->
+            <div class="data-grid">
+                <!-- Caja de datos: Humedad -->
+                <div class="data-box">
+                    <p>12%</p>
+                    <span>Humedad</span>
+                </div>
+                <!-- Caja de datos: pH -->
+                <div class="data-box">
+                    <p>12%</p>
+                    <span>pH</span>
+                </div>
+                <!-- Caja de datos: Temperatura -->
+                <div class="data-box">
+                    <p>35°C</p>
+                    <span>Temperatura</span>
+                </div>
+                <!-- Caja de datos: pH adicional -->
+                <div class="data-box">
+                    <p>7/14</p>
+                    <span>pH</span>
+                </div>
+                <!-- Contenedor de la calidad del suelo -->
+                <div class="soil-quality">
+                    <!-- Datos del suelo: N -->
+                    <div class="soil-data">
+                        <p>35 ppm</p>
+                        <span>N</span>
+                    </div>
+                    <!-- Datos del suelo: P -->
+                    <div class="soil-data">
+                        <p>15 ppm</p>
+                        <span>P</span>
+                    </div>
+                    <!-- Datos del suelo: K -->
+                    <div class="soil-data">
+                        <p>18 ppm</p>
+                        <span>K</span>
+                    </div>
+                </div>
+                <!-- Etiqueta para "Calidad del suelo" -->
+                <p class="soil-label">Calidad del suelo</p>
+            </div>
+        </section>
+
+        <!-- Sección de eventos programados -->
+        <section class="scheduled-events">
+            <h2>Eventos programados</h2>
+
+            <!-- Evento 1: Riego parcela A -->
+            <div class="event">
+                <div class="event-info">
+                    <p>Riego parcela A</p>
+                    <span class="time">🕒 10:00 - 11:00 AM</span>
+                </div>
+                <div class="event-status">
+                    <span class="status-icon">⚙️</span>
+                    <span class="status-label">Automático</span>
+                </div>
+            </div>
+
+            <!-- Evento 2: Riego parcela B -->
+            <div class="event">
+                <div class="event-info">
+                    <p>Riego parcela B</p>
+                    <span class="time">🕒 9:00 - 11:00 AM</span>
+                </div>
+                <div class="event-status">
+                    <span class="status-icon">👤</span>
+                    <span class="status-label">Usuario</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

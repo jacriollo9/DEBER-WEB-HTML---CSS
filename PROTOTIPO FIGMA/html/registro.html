@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metaetiqueta para la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Metaetiqueta para hacer el sitio web responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Registro de Usuario</title>
+    <!-- Enlace a la hoja de estilos externa para el diseño -->
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+    <!-- Contenedor principal que agrupa todo el contenido del formulario de registro -->
+    <div class="register-container">
+        <!-- Título principal del formulario de registro -->
+        <h1>Perfil</h1>
+        
+        <!-- Contenedor para la imagen de perfil del usuario -->
+        <div class="profile-image-container">
+            <!-- Imagen de perfil del usuario -->
+            <img src="../imag/imagLogin.jpg" alt="Imagen de perfil" class="profile-image">
+            <!-- Botón para editar la imagen de perfil -->
+            <button class="edit-image-btn">✏️</button>
+        </div>
+
+        <!-- Formulario de registro para los datos del usuario -->
+        <form>
+            <!-- Campo para el nombre del usuario -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="José Criollo" value="José Criollo">
+
+            <!-- Campo para el teléfono del usuario -->
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" placeholder="0999589344" value="0999589344">
+
+            <!-- Campo para el correo electrónico del usuario -->
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="joseppach06@gmail.com" value="joseppach06@gmail.com">
+
+            <!-- Campo para la contraseña del usuario -->
+            <label for="password">Contraseña</label>
+            <!-- Contenedor para el campo de la contraseña con ícono de visibilidad -->
+            <div class="input-container">
+                <input type="password" id="password" placeholder="••••••••" value="password123">
+                <i class="icon eye"></i>
+            </div>
+
+            <!-- Campo para la fecha de cumpleaños del usuario -->
+            <label for="cumpleanos">Cumpleaños</label>
+            <input type="date" id="cumpleanos">
+
+            <!-- Botón de opción para recibir alertas -->
+            <div class="switch-container">
+                <label for="alertas">Recibir alertas</label>
+                <label class="switch">
+                    <!-- Checkbox para activar o desactivar las alertas -->
+                    <input type="checkbox" id="alertas">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- Botón para guardar los cambios y redirigir a la página de login -->
+            <button type="button" class="save-btn" onclick="window.location.href='login.html'">Guardar cambios</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Definir la fuente general para la página */
+    background-color: #f0f8ff; /* Establecer el color de fondo azul claro */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    display: flex; /* Usar flexbox para centrar los elementos */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    height: 100vh; /* Asegurar que el contenedor ocupe la altura completa de la pantalla */
+    box-sizing: border-box; /* Incluir padding y bordes en el tamaño total del elemento */
+}
+
+/* Contenedor del formulario de registro */
+.register-container {
+    background-color: white; /* Establecer fondo blanco para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno dentro del formulario */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
+    width: 600px; /* Ancho fijo en pantallas grandes */
+    max-width: 95%; /* Asegurarse de que el formulario no exceda el 95% del ancho de la pantalla */
+    margin: 20px; /* Añadir margen alrededor del formulario */
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center; /* Centrar el texto del título */
+    color: #333; /* Texto en color gris oscuro */
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-image-container {
+    position: relative; /* Posicionamiento relativo para el botón de edición */
+    display: flex; /* Flexbox para centrar la imagen de perfil */
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+}
+
+/* Imagen de perfil */
+.profile-image {
+    width: 100px; /* Ancho de la imagen en pantallas grandes */
+    height: 100px; /* Altura de la imagen en pantallas grandes */
+    border-radius: 50%; /* Hacer la imagen circular */
+    object-fit: cover; /* Asegurarse de que la imagen se ajuste correctamente al contenedor */
+}
+
+/* Botón para editar la imagen de perfil */
+.edit-image-btn {
+    position: absolute; /* Posicionamiento absoluto para estar encima de la imagen */
+    bottom: 5px; /* Separación desde la parte inferior de la imagen */
+    right: 5px; /* Separación desde la parte derecha de la imagen */
+    background-color: #666; /* Fondo gris oscuro para el botón de edición */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Hacer el botón circular */
+    padding: 5px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambiar el cursor a una mano al pasar sobre el botón */
+}
+
+/* Estilos de los campos del formulario */
+label {
+    display: block; /* Mostrar cada etiqueta (label) en su propio bloque */
+    margin-bottom: 5px; /* Añadir espacio debajo del label */
+    font-weight: bold; /* Hacer el texto del label en negrita */
+}
+
+/* Campos de entrada de texto */
+input {
+    width: 91%; /* El campo de entrada ocupa el 91% del contenedor */
+    padding: 12px; /* Espaciado interno del campo */
+    margin-bottom: 15px; /* Margen inferior para separar los campos */
+    border: 1px solid #ddd; /* Borde gris claro alrededor del campo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Contenedor para campos con íconos */
+.input-container {
+    display: flex; /* Usar flexbox para alinear los íconos y los campos */
+    align-items: center; /* Alinear verticalmente los íconos y los campos */
+}
+
+/* Ícono del ojo para mostrar/ocultar contraseña */
+.input-container .eye {
+    cursor: pointer; /* Cambiar el cursor a una mano al pasar sobre el ícono */
+    margin-left: -30px; /* Mover el ícono hacia la izquierda */
+    font-size: 20px; /* Tamaño del ícono */
+}
+
+/* Estilo del interruptor para recibir alertas */
+.switch-container {
+    display: flex; /* Usar flexbox para alinear el interruptor y el texto */
+    justify-content: space-between; /* Separar el interruptor y el texto */
+    align-items: center; /* Alinear verticalmente */
+    margin-bottom: 20px; /* Añadir margen inferior */
+}
+
+/* Contenedor del interruptor */
+.switch {
+    position: relative; /* Posicionamiento relativo para el slider del interruptor */
+    display: inline-block; /* Mostrar el interruptor como un bloque en línea */
+    width: 40px; /* Ancho del interruptor */
+    height: 20px; /* Altura del interruptor */
+}
+
+/* Input invisible del interruptor */
+.switch input {
+    opacity: 0; /* Hacer el input invisible */
+    width: 0;
+    height: 0;
+}
+
+/* Estilo del slider del interruptor */
+.slider {
+    position: absolute; /* Posicionamiento absoluto dentro del interruptor */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el interruptor */
+    top: 0; /* Posición superior del slider */
+    left: 0; /* Posición izquierda del slider */
+    right: 0; /* Extender hasta el borde derecho */
+    bottom: 0; /* Extender hasta el borde inferior */
+    background-color: #ccc; /* Color gris claro por defecto */
+    transition: 0.4s; /* Transición suave al activar/desactivar */
+    border-radius: 34px; /* Bordes redondeados */
+}
+
+/* Estilo del círculo dentro del slider */
+.slider:before {
+    position: absolute; /* Posicionamiento absoluto del círculo */
+    content: ""; /* Elemento vacío para el círculo */
+    height: 16px; /* Altura del círculo */
+    width: 16px; /* Ancho del círculo */
+    left: 2px; /* Espacio desde el borde izquierdo */
+    bottom: 2px; /* Espacio desde el borde inferior */
+    background-color: white; /* Color blanco del círculo */
+    transition: 0.4s; /* Transición suave */
+    border-radius: 50%; /* Hacer el círculo completamente redondo */
+}
+
+/* Cambiar el color del slider cuando está activado */
+input:checked + .slider {
+    background-color: #2196F3; /* Fondo azul cuando está activado */
+}
+
+/* Mover el círculo cuando está activado */
+input:checked + .slider:before {
+    transform: translateX(20px); /* Mover el círculo hacia la derecha */
+}
+
+/* Botón de guardar cambios */
+.save-btn {
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+}
+
+/* Cambio de color al pasar el cursor sobre el botón */
+.save-btn:hover {
+    background-color: #555; /* Cambiar el color a un gris más claro */
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .register-container {
+        width: 90%; /* El formulario ocupará el 90% del ancho en pantallas pequeñas */
+    }
+
+    .profile-image {
+        width: 60px; /* Reducir el tamaño de la imagen de perfil en móviles */
+        height: 60px;
+    }
+
+    .save-btn {
+        font-size: 14px; /* Reducir el tamaño del texto en el botón en móviles */
+    }
+}

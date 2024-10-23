@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos para configurar la codificación de caracteres y hacer la página responsiva -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <title>Bienvenido a HydroTech</title>
+
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- Contenedor principal de la página que agrupa todos los elementos -->
+    <div class="main-container">
+        
+        <!-- Sección para la imagen de bienvenida -->
+        <div class="image-box">
+            <!-- Imagen de bienvenida cargada desde la carpeta 'imag' -->
+            <img src="../imag/imagBienvenida.jpg" alt="Bienvenido a HydroTech">
+        </div>
+        
+        <!-- Contenedor del formulario de inicio de sesión -->
+        <div class="login-container" id="loginForm">
+            <!-- Título del formulario -->
+            <h1>Bienvenido a <br> HydroTech</h1>
+            
+            <!-- Inicio del formulario -->
+            <form>
+                <!-- Etiqueta para el campo de correo electrónico -->
+                <label for="correo">Correo</label>
+                
+                <!-- Contenedor del campo de correo electrónico -->
+                <div class="input-container">
+                    <!-- Ícono de correo electrónico -->
+                    <i class="icon">📧</i>
+                    <!-- Campo de entrada para ingresar el correo -->
+                    <input type="email" id="correo" placeholder="taylor.emily@yahoo.com">
+                </div>
+
+                <!-- Etiqueta para el campo de contraseña -->
+                <label for="password">Contraseña</label>
+                
+                <!-- Contenedor del campo de contraseña -->
+                <div class="input-container">
+                    <!-- Ícono de candado para representar la contraseña -->
+                    <i class="icon">🔒</i>
+                    <!-- Campo de entrada para ingresar la contraseña -->
+                    <input type="password" id="password" placeholder="••••••••">
+                    <!-- Ícono de ojo para mostrar/ocultar la contraseña -->
+                    <i class="icon eye">👁️</i>
+                </div>
+
+                <!-- Sección para el enlace de recuperación de contraseña -->
+                <div class="forgot-password">
+                    <!-- Enlace que redirige a la página de recuperación de contraseña -->
+                    <a href="recover.html">¿Olvidaste la contraseña?</a>
+                </div>
+
+                <!-- Botón de inicio de sesión -->
+                <button type="button" class="login-btn" onclick="window.location.href='dashboard.html'">Ingresar</button>
+
+                <!-- Botón para redirigir al formulario de registro -->
+                <button type="button" class="register-btn" onclick="window.location.href='registro.html'">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

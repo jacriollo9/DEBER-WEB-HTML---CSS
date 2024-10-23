@@ -1,0 +1,112 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Definir la fuente global */
+    background-color: #f0f8ff; /* Establecer un color de fondo azul claro */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
+    display: flex; /* Usar flexbox para centrar los elementos */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    overflow: hidden; /* Evitar que el contenido desborde el viewport */
+}
+
+/* Contenedor principal */
+.recover-container {
+    text-align: center; /* Alinear todo el texto al centro */
+    padding: 40px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 400px; /* Ancho fijo para pantallas grandes */
+    box-sizing: border-box; /* Incluir padding y borde en el tamaño total */
+}
+
+/* Estilo del encabezado */
+h2 {
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Margen inferior */
+    color: #0288d1; /* Color azul para el título */
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #7e7e7e; /* Color gris claro para el texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Contenedor del input de correo */
+.input-container {
+    display: flex; /* Usar flexbox para alinear el ícono y el input */
+    align-items: center; /* Alinear los elementos verticalmente en el centro */
+    margin-bottom: 15px; /* Espaciado inferior entre inputs */
+    background-color: #f1f1f1; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+}
+
+/* Estilo del input */
+.input-container input {
+    border: none; /* Eliminar bordes */
+    background-color: transparent; /* Fondo transparente */
+    flex: 1; /* El input ocupa el espacio disponible dentro del contenedor */
+    padding-left: 10px; /* Espaciado interno a la izquierda */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+/* Estilo del ícono */
+.icon {
+    font-size: 18px; /* Tamaño del ícono */
+}
+
+/* Estilo del botón de enviar */
+.recover-btn {
+    background-color: #4a4a4a; /* Color de fondo gris oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px; /* Espaciado interno del botón */
+    width: 100%; /* El botón ocupa todo el ancho del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para hover */
+}
+
+/* Cambio de color cuando el cursor está sobre el botón */
+.recover-btn:hover {
+    background-color: #333; /* Cambiar a un color más oscuro */
+    transform: scale(1.05); /* Ampliar ligeramente el botón al hacer hover */
+}
+
+/* Estilo del enlace para volver al inicio */
+.back-to-home {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.back-to-home a {
+    font-size: 14px; /* Tamaño de la fuente del enlace */
+    color: #0288d1; /* Color azul */
+    text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .recover-container {
+        width: 90%; /* El contenedor ocupa el 90% del ancho disponible en pantallas pequeñas */
+        padding: 20px; /* Reducir el padding para móviles */
+    }
+
+    h2 {
+        font-size: 20px; /* Reducir el tamaño del título en móviles */
+    }
+
+    .recover-btn {
+        font-size: 14px; /* Reducir el tamaño de la fuente del botón */
+    }
+
+    .input-container {
+        padding: 8px; /* Reducir el padding en móviles */
+    }
+}
